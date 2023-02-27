@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/app_service
+    username: root
+    password: appletservice
+  redis:
+    host: 127.0.0.1
+    password: root
+    port: 6379
+  profiles:
+    active: test
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.test.bean
+server:
+  port: 8085
+  servlet:
+    context-path: /demo
+
+maven:
+  path: ${M2_HOME:abc}
+
+baidu:
+  APIKey: qiAEK2a3VN3vKiaiyEO6lV16
+  SecretKey: vlm14bqDY30vxYlPWKpPvZ0XtXYx5mcF
+
+aliyun_oss:
+  end_point: oss-cn-shanghai.aliyuncs.com
+  access_key_id:
+  access_key_secret:
+  bucket_name:
+  cdn_url:
+  active:
+  service_name:
